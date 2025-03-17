@@ -1,0 +1,122 @@
+
+
+.header_upper {
+    width: 100%;
+    height: 40px;
+    background-color: #F5F5F5;
+    @include respond-to(md) {
+        display: none;
+    }
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+
+}
+
+.header_upper_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.header_upper_flex i,
+p {
+    color: #989898;
+}
+
+.header_upper_icons {
+    gap: 20px;
+    display: flex;
+}
+
+.header_upper_search {
+    display: flex;
+
+}
+
+.u_span {
+    width: 40px;
+    height: auto;
+    background-color: white;
+}
+
+.u_span i {
+    color: black;
+}
+
+// -------------------
+.main_header {
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    box-shadow: #393346;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+.main_header nav {
+    @include respond-to(md) {
+        display: none;
+    }
+}
+
+.main_header_logo {
+    height: 100%;
+    object-fit: cover;
+    @extend
+    %center-element
+}
+
+.main_header_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.main_nav_items {
+    display: flex;
+    gap: 50px;
+    color: #393346;
+
+}
+
+.active {
+    color: red;
+}
+
+.main_header_signIn {
+    display: flex;
+    font-size: 30px;
+    gap: 25px;
+    color: #393346;
+   
+}
+
+.main_icon_border {
+    height: 30px;
+    width: 1px;
+    background-color: gray;
+
+}
+
+.fa-bars {
+    display: none;
+
+    @include respond-to(md) {
+        display: block;
+    }
+}
+
+
+
+
+
+
+// ---------

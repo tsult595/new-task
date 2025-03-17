@@ -1,0 +1,65 @@
+.section_commerce{
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.flex_one , .flex_two , .flex_three{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.box , .box2{
+    width: 400px;
+    
+}
+.flex_down img, .flex_up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.watch{
+    height: 350px;
+}
+.shoes{
+    display: flex;
+    align-self: flex-end;
+}
+.sighUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 20px;
+    margin: 0 auto;
+    height: 390px;
+    text-align: center; 
+    background-color: #F2F2F2;
+}
+.sighUp_inner{
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+}
+.sighUp h2{
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Montserrat';
+}
+.sighUp p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.sighUp_btn{
+    width: 50%;
+    height: 10%;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.section_flex{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
