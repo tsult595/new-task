@@ -1,0 +1,111 @@
+.new_look{
+    width: 100%;
+    margin-top: 3%;
+}
+
+.new_look_flex{
+    display: flex;
+    justify-content: space-around;
+    @include respond-to(sm) {
+        flex-direction: column;
+    }
+}
+.new_look_item_other img{
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.new_look_item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 1s;
+  @include respond-to(md) {
+    width: 90%;
+ }
+}
+.new_look_item{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.new_look_item_other{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+}
+.new_look_text{
+   position: absolute;
+   width: 50%;
+   height: 50%;
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 15px;
+   color: white;
+}
+.new_look_text_other{
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: white;
+}
+.new_look_text_other p{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 400;
+    color: black;
+    @include respond-to(md) {
+        font-size: 1rem;
+    }
+    @include respond-to(sm) {
+        font-size: 1rem;
+    }
+}
+
+.new_look_text h1{
+    font-size: 3.8rem;
+    letter-spacing: 4px;
+    font-weight: 600;
+   
+}
+.new_look_text p{
+    font-size: 1.7rem;
+}
+.new_look_text h3{
+    font-size: 2.5rem;
+}
+.countdown_flex{
+    display: flex;
+    gap: 10px;
+}
+.countdown_flex  div{
+    width: 78px;
+    height: 55px;
+    padding: 8px 9px;
+    border: 1px solid gray;
+    
+}
+.new_look_text p{
+  color: white;
+}
+.new_look_item:hover img{
+    transform: scale(1.2);
+}
+.new_look_item_other:hover img{
+    transform: scale(1.2);
+}

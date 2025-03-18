@@ -1,30 +1,61 @@
 .section_commerce{
     width: 100%;
-    height: 100vh;
     padding-top: 20px;
 }
 
 .flex_one , .flex_two , .flex_three{
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    gap: 30px;
+    @include respond-to(md) {
+        
+    }
 }
 
 .box , .box2{
     width: 400px;
-    
+    overflow: hidden;
+    position: relative;
+    @include respond-to(md) {
+        width: 350px;
+    }
+    @include respond-to(xsm) {
+        width: 250px;
+    }
 }
-.flex_down img, .flex_up img{
+.box img , .box2 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease;
+  
 }
+.box:hover img  , .box2:hover img {
+    transform: scale(1.1);
+  }
+
 .watch{
     height: 350px;
 }
 .shoes{
     display: flex;
     align-self: flex-end;
+}
+.items{
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items:hover{
+    background-color: orangered;
+    transition: 1s;
 }
 .sighUp {
     display: flex;
@@ -35,6 +66,7 @@
     height: 390px;
     text-align: center; 
     background-color: #F2F2F2;
+    
 }
 .sighUp_inner{
     flex-direction: column;
@@ -52,11 +84,16 @@
 }
 .sighUp_btn{
     width: 50%;
-    height: 10%;
+    height: 15%;
     background-color: black;
     color: white;
-    border-radius: 15px;
+    border-radius: 25px;
     margin-top: 30px;
+    
+}
+.sighUp_btn:hover{
+    background-color: orangered;
+    transition: 1s;
 }
 .section_flex{
    display: flex;

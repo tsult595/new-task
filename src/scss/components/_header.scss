@@ -7,6 +7,8 @@
     @include respond-to(md) {
         display: none;
     }
+   
+    
 }
 
 .container {
@@ -33,7 +35,61 @@ p {
     gap: 20px;
     display: flex;
 }
-
+.dropDown{
+    position: relative;
+}
+.dropDown_items{
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    width: 180px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    padding: 10px 25px ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main_header_nav {
+    .main_nav_items {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+  
+      li {
+        position: relative;
+        padding-bottom: 5px;
+  
+       
+  
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 2px;
+          background-color: black;
+          
+        }
+  
+        &:hover::after {
+          width: 100%;
+        }
+  
+    
+        &.active::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+.dropDown:hover .dropDown_items{
+  visibility: visible;
+  opacity: 1;
+}
 .header_upper_search {
     display: flex;
 
@@ -58,6 +114,7 @@ p {
     position: sticky;
     top: 0px;
     z-index: 999;
+
 }
 
 .main_header nav {
